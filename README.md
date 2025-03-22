@@ -1,4 +1,4 @@
-DScanner - DEFCON CTF Drupal Exploit Tool
+# DScanner - CTF Drupal Exploit Tool
 
 DScanner 3.0.0 - Made By Taylor Christian Newsome
 
