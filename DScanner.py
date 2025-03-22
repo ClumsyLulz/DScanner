@@ -27,7 +27,7 @@ Made By Taylor Christian Newsome
 """
 
 # Version
-VERSION = "DScanner 3.0.0 - DEFCON CTF Drupal Exploit Monster (March 2025)"
+VERSION = "DScanner 3.0.0 - CTF Drupal Exploit Monster (March 2025)"
 
 # Logging setup
 logging.basicConfig(filename='dscanner.log', level=logging.INFO, 
