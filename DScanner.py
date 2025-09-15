@@ -47,6 +47,7 @@ user_agents = [
 proxies = {
     # "http": "http://127.0.0.1:8080",  # Uncomment for proxy use
     # "https": "http://127.0.0.1:8080"
+    # "socks5": "socks5://127.0.0.1:9050"
 }
 
 # Expanded sensitive paths (CTF goldmine)
